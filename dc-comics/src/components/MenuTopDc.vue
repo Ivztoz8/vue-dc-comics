@@ -66,17 +66,20 @@ export default {
 
 
 <style scoped lang="scss">
+
+@import '../style/vars.scss';
+
 ul{
     list-style-type: none;
     display: flex;
+     padding: 30px 30px;
     li{
         margin: 0 30px;
         a{
             text-decoration: none;
             text-transform: uppercase;
-            color: black;
+            color: $txt-grdrk;
             font-weight: bold;
-
         }
     }
 }
