@@ -64,37 +64,37 @@ export default {
                   title: 'dc',
                   links:[
                     {
-                      link: 'Characters'
+                      link: 'Term Of Use'
                     },
                     {
-                      link: 'Comics'
+                      link: 'Privacy Policy (New)'
                     },
                     {
-                      link: 'Movies'
+                      link: 'Ad Choices'
                     },
                     {
-                      link: 'TV'
+                      link: 'Advertising'
                     },
                     {
-                      link: 'Games'
+                      link: 'Jobs'
                     },
                     {
-                      link: 'Videos'
+                      link: 'Subscriptions'
                     },
                     {
-                      link: 'News'
+                      link: 'Talent Workshops'
                     },
                     {
-                      link: 'News'
+                      link: 'CPSC Certificates'
                     },
                     {
-                      link: 'News'
+                      link: 'Ratings'
                     },
                     {
-                      link: 'News'
+                      link: 'Shop Help'
                     },
                     {
-                      link: 'News'
+                      link: 'Contact Us'
                     },
                   ]
               },
@@ -127,7 +127,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-@import '../style/vars.scss';
+@import '../style/pater.scss';
 
 ul{
     list-style-type: none;

@@ -1,11 +1,11 @@
 <template>
   <div class="bg_darkgray padding0">
-    <div class="row container">
-      <div class="container">
+    <div class="row mycontainer">
+      <div class="mycontainer">
       <div class="bg_darkgra"><a class="button padding1" href="#">SING-UP NOW!</a></div>
     </div>
     <div class="column">
-      <ul>
+      <ul class="als-end">
         <li><h3>FOLLOW US</h3></li>
         <li v-for="(element, index) in IconsLinkList" :key="index">
          <a href="#"><img :src="element.img" :alt="element.alt"></a> 
@@ -50,8 +50,7 @@ export default {
 
 <style scoped lang="scss">
 
-@import '../style/global.scss';
-@import '../style/vars.scss';
+@import '../style/pater.scss';
 
 .bg_darkgray{
   background-color: $bg-grdrkhg;
@@ -87,6 +86,10 @@ a{
   width: 50%;
   align-items: center;
   flex-direction: column;
+}
+
+.als-end{
+  align-self: end;
 }
 
 ul{

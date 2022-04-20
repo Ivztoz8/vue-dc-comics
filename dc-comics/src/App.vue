@@ -1,15 +1,19 @@
 <template>
   <div>
-   <header class="container">
-       <LogoDc/>
+   <header class="mycontainer">
+      <LogoDc/>
       <MenuTopDc/>
    </header>
    <main>
+     <div class="jumbotron">
+     </div>
      <div class="content">
-       <div class="container">
-         <h3>&#8594; Content Goes Here &#8592;</h3>
+       <div class="mycontainer relative">
+         <div class="label-comic">
+           current series
+         </div>
+          <ComicsDC/>
        </div>
-       
      </div>
      <div class="icons">
        <IconDc/>
@@ -28,6 +32,8 @@ import MenuTopDc from './components/MenuTopDc.vue'
 import IconDc from './components/IconDc.vue'
 import FooterUpper from './components/FooterUpper.vue'
 import FooterDowner from './components/FooterDowner.vue'
+import "bootstrap"
+import ComicsDC from './components/ComicsDC.vue'
 
 
 export default {
@@ -37,17 +43,16 @@ export default {
     MenuTopDc,
     IconDc,
     FooterUpper,
-    FooterDowner
+    FooterDowner,
+    ComicsDC
   }
 }
 </script>
 
 <style lang="scss">
 
-@import './style/reset.scss';
-@import './style/mixin.scss';
-@import './style/global.scss';
-@import './style/vars.scss';
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import './style/pater.scss';
 
 
 header{
@@ -72,4 +77,23 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.jumbotron{
+  background-image: url('./assets/img/jumbotron.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+}
+
+.label-comic{
+  display: inline-block;
+  background-color: $bg-blue;
+  padding: 20px 10px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
 </style>

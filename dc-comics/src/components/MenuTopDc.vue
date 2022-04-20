@@ -3,7 +3,7 @@
       <!-- Menu -->
       <ul>
           <li v-for="(element, index) in menuLink" :key="index">
-              <a :href="element.url">{{element.link}}</a>
+             <a :href="element.url">{{element.link}}</a> 
           </li>
       </ul>
   </div>
@@ -67,14 +67,17 @@ export default {
 
 <style scoped lang="scss">
 
-@import '../style/vars.scss';
+@import '../style/pater.scss';
 
 ul{
     list-style-type: none;
     display: flex;
-     padding: 30px 30px;
+     :hover{
+        border-bottom: 1px solid $txt-blue;
+    }
     li{
         margin: 0 30px;
+        
         a{
             text-decoration: none;
             text-transform: uppercase;
@@ -83,4 +86,6 @@ ul{
         }
     }
 }
+
+
 </style>

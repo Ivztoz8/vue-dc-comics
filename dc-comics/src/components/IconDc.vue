@@ -59,7 +59,7 @@ export default {
 
 <style scoped lang="scss">
 
-@import '../style/vars.scss';
+@import '../style/pater.scss';
 
 ul{
     list-style-type: none;
@@ -73,13 +73,14 @@ ul{
         color: $txt-whi;
 
         h3{
-          margin-left: 20px;
+          margin: 0 30px;
 
            a{
             text-decoration: none;
             color: $txt-whi;
             text-transform: uppercase;
             font-weight: bold;
+            font-size: 0.9rem;
             }
           }
       }
