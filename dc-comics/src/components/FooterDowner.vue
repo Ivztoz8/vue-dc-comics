@@ -1,15 +1,17 @@
 <template>
   <div class="bg_darkgray padding0">
-    <div class="container">
-      <div class="bg_darkgray"><a class="button padding1" href="#">SING-UP NOW!</a></div>
+    <div class="row container">
+      <div class="container">
+      <div class="bg_darkgra"><a class="button padding1" href="#">SING-UP NOW!</a></div>
     </div>
-    <div class="container_A">
+    <div class="column">
       <ul>
         <li><h3>FOLLOW US</h3></li>
         <li v-for="(element, index) in IconsLinkList" :key="index">
          <a href="#"><img :src="element.img" :alt="element.alt"></a> 
         </li>
       </ul>
+    </div>
     </div>
   </div>
 </template>
@@ -72,10 +74,19 @@ a{
   color: $txt-whi;           
 }
 
-.container_A{
+.row{
   display: flex;
+  width: 80%;
   flex-direction: row;
-  width: 100%;
+  justify-content: start;
+  align-items: center;
+}
+
+.column{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
 }
 
 ul{
@@ -86,23 +97,22 @@ ul{
 
     li{
         display: flex;
-        align-items: start;
+        align-items: center;
         color: $txt-blue;
-        margin: 10%;
 
         h3{
             color: $txt-blue;
             text-transform: uppercase;
             font-weight: bold;
-            padding: 60px 30px;
           }
 
         a{
             display: flex;
             text-decoration: none;
             color: $txt-gr;
+            padding-left: 20px;
             margin: 2% 0;
-            
+
          }
       }
   }
